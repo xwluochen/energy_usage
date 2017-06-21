@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  measurement: one
+  address: one
+  year: 1
+  month: 1
+  month_cost: 9.99
+
+two:
+  measurement: two
+  address: two
+  year: 1
+  month: 1
+  month_cost: 9.99
