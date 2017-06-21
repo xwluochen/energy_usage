@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <h3 class="text-center">Energy Usage Per Year <%= @selected_year %> - <%= @years.last %></h3>
+
+  <label>Year</label>  <%= select_tag 'year', options_for_select(@years, :selected => @selected_year) %>
+  <hr class="short">
+  <table class="table table-striped text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <thead>
+      <tr>
+        <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left">Building</th>
+        <th class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left">Year</th>
+        <%= render :partial => 'measurement', :collection =>  @measurements %>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render :partial => 'usages', :locals => { :addresses => @addresses, :measurements => @measurements, :month_costs => @month_costs, :current_year => @selected_year } %>
+    </tbody>
+  </table>
+</div>

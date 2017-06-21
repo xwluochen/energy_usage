@@ -1,0 +1,9 @@
+<% addresses.each do |address| %>
+  <tr>
+    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left"><%= address.location.gsub /&amp;/, "" %></td>
+    <td class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left"><%= @selected_year %></td>
+    <% measurements.each do |measurement| %>
+      <td class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left"><%=  number_to_currency(month_costs[[address.id, measurement.id]], {:precision => 2}) || 0.00 %></td>
+    <% end %>
+  </tr>
+<% end %>
