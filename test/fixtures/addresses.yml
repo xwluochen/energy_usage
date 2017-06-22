@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  location: MyString
+  location: 3050 Webster Ave [George J. Werdan III School]
 
 two:
-  location: MyString
+  location: 131 Irwin St [Manhattan Beach School]
