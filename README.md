@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.3.x
 
-Things you may want to cover:
+* Rails version 5.0.4
 
-* Ruby version
+* SQLite relational database
 
-* System dependencies
+* Database creation/Database initialization (lib/tasks/setup.rake)
 
-* Configuration
+* Responsive web design
 
-* Database creation
+* Seed data from Open Data's JSON api
 
-* Database initialization
+* test code
 
-* How to run the test suite
+As a user on the site I am able to see a list of all addresses with measurements totals by year.
+The user can toggle the year via a drop down control.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
