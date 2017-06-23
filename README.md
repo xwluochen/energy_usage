@@ -16,5 +16,3 @@
 
 As a user on the site I am able to see a list of all addresses with measurements totals by year.
 The user can toggle the year via a drop down control.
-
-

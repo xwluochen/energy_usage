@@ -8,7 +8,7 @@ class AddressTest < ActiveSupport::TestCase
   end
 
   test 'invalid without a location' do
-  	address = Address.new(location: nil)
+    address = Address.new(location: nil)
     assert_not address.valid?, "The address should not be valid when missing location"
   end
 

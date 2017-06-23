@@ -4,8 +4,8 @@ $(document).ready(function() {
     var year = $(this).val();
 
     $.get(window.location.href + "/dashboard/usage_filter", { year: year },
-          function(data) {
-            $("table tbody").html(data);
-          }, "html");
+      function(data) {
+        $("table tbody").html(data);
+      }, "html");
   });
 });
